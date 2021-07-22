@@ -1,0 +1,155 @@
+body{
+  background-color: #fff0f5;
+}
+
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.title{
+  margin-left: 45%;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  color: #008b8b;
+}
+
+.btn_start{
+  margin-left: 50%;
+  width: 100px;
+  height: 50px;
+  background-color: #db7093;
+  color: #fff;
+  font-size: 15px;
+  margin-left: 47%;
+  border: gray 1px solid;
+  border-radius: 5px;
+  box-shadow: #000 0 2px 5px;
+  text-align: center;
+  padding-top: 7px;
+}
+
+.btn_start.invisible{
+  display: none;
+}
+
+.card{
+  width: 20%;
+  height: 100px;
+  background-color:#b0c4de	;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 40px;
+  border: gray 1px solid;
+  border-radius: 5px;
+  box-shadow: #000 0 2px 5px;
+  box-sizing: border-box;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  color: #b0c4de;
+  transition: all ease 0.1s;
+  transform: scale(1);
+
+}
+
+.card.active{
+  background-color: #f8f8ff;
+  transform: scale(0.97);
+}
+
+.cards__container{
+  width: 600px;
+  margin-top: 50px;
+  margin-left:30%;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  transform: scale(0.9);
+  display: none;
+  transition: all ease 0.5s;
+}
+
+.cards__container.active{
+display: flex;
+}
+
+.cards__container.opacity{
+  opacity: 0.2;
+  content: '';
+  z-index: 0;
+  position: relative;
+}
+
+.btn_finish{
+  margin-left: 50%;
+  width: 200px;
+  height: 50px;
+  background-color: #db7093;
+  color: #fff;
+  font-size: 15px;
+  margin-left: 34%;
+  border: gray 1px solid;
+  border-radius: 5px;
+  box-shadow: #000 0 2px 5px;
+  text-align: center;
+  padding-top: 7px;
+  margin-bottom: 15px;
+  top: -100%;
+  content: '';
+  z-index: 10;
+  position: absolute;
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+
+.btn_finish.active{
+  top: 30%
+}
+
+.quanity{
+  margin-left: 47%;
+  margin-bottom: 5px;
+}
+
+.input_number{
+  margin-left: 47%;
+  margin-bottom: 10px;
+}
+
+.timer{
+  width: 100px;
+  height: 50px;
+  background-color: #008080;
+  color: #fff;
+  font-size: 30px;
+  margin-left: 47%;
+  border: gray 1px solid;
+  border-radius: 5px;
+  box-shadow: #000 0 2px 5px;
+  text-align: center;
+  padding-top: 10px;
+  display: none;
+}
+
+.timer.active{
+  display: block;
+}
+
+.congrats{
+  font-size: 70px;
+  color: #db7093;
+  background-color: #e0ffff;
+  border: 3px solid  #008080;
+  border-radius: 5px;
+  margin-left: 18%;
+  padding: 10px;
+  top: -100%;
+  content: '';
+  z-index: 10;
+  position: absolute;
+  transition: all ease-in-out 0.5s;
+}
+
+.congrats.active{
+  top: 40%;
+}
+
+
